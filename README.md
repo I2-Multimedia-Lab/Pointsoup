@@ -1,6 +1,8 @@
 # Pointsoup: High-Performance and Extremely Low-Decoding-Latency Learned Geometry Codec for Large-Scale Point Cloud Scenes
 
 ## News
+- [2024.4.21] The manuscript is uploaded to Arxiv, which will be publicly accessible soon.
+- [2024.4.21] The supplementary material is uploaded to [Google Drive](https://drive.google.com/file/d/113PvrVBll9frY1k6OC3QDA5PugnDcHdV/view?usp=sharing).
 - [2024.4.17] Our paper has been accepted by [IJCAI 2024](https://ijcai24.org/)!
 
 ## Overview
