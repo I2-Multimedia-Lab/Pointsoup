@@ -1,7 +1,7 @@
 # Pointsoup: High-Performance and Extremely Low-Decoding-Latency Learned Geometry Codec for Large-Scale Point Cloud Scenes
 
 ## News
-- [2024.4.21] The manuscript is uploaded to Arxiv, which will be publicly accessible soon.
+- [2024.4.23] The manuscript is now available on Arxiv [2404.13550](https://arxiv.org/abs/2404.13550).
 - [2024.4.21] The supplementary material is uploaded to [Google Drive](https://drive.google.com/file/d/113PvrVBll9frY1k6OC3QDA5PugnDcHdV/view?usp=sharing).
 - [2024.4.17] Our paper has been accepted by [IJCAI 2024](https://ijcai24.org/)!
 
@@ -22,18 +22,18 @@ For the convenience of reproduction, we provide three different ways to help cre
 #### Option 1: Using yml
 
 ```
-conda env create -f=environment.yml
+conda env create -f=./environment/environment.yml
 ```
 
 #### Option 2: Using .sh
 
 ```
-source ./env_create.sh
+source ./environment/env_create.sh
 ```
 
 #### Option 3: CodeWithGPU (AutoDL image)
 
-Will be released soon.
+[Pointsoup Image](https://www.codewithgpu.com/i/I2-Multimedia-Lab/Pointsoup/Pointsoup) has been uploaded at [CodeWithGPU](https://www.codewithgpu.com/image) community. The required environment can be instantly built once you create an [AutoDL](https://www.autodl.com) container instance with our image `I2-Multimedia-Lab/Pointsoup/Pointsoup` being selected from the community image list.
 
 ## Data
 
@@ -76,6 +76,10 @@ python ./decompress.py \
 We use `PccAppMetrics` for D1 PSNR calculation. You can refer to [MPEGGroup/mpeg-pcc-tmc2](https://github.com/MPEGGroup/mpeg-pcc-tmc2) if the provided `PccAppMetrics` file does not fit your platform.
 
 ```
+chmod +x ./PccAppMetrics
+```
+
+```
 python ./eval_PSNR.py \
     --input_glob='./data/example_pc_1023/*.ply' \
     --decompressed_path='./data/decompressed/' \
@@ -101,6 +105,13 @@ Limitations:
 
 ## Citation
 
+If you find this work useful, please consider citing our work:
+
 ```
-Waiting for publication...
+@article{kang2024pointsoup,
+      title={Pointsoup: High-Performance and Extremely Low-Decoding-Latency Learned Geometry Codec for Large-Scale Point Cloud Scenes}, 
+      author={Kang You, Kai Liu, Li Yu, Pan Gao, Dandan Ding},
+      journal={arXiv preprint arXiv:2404.13550},
+      year={2024}
+}
 ```
