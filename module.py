@@ -147,7 +147,7 @@ class DWUS(nn.Module):
             dilated_windows: (M, k, 3)
             dilated_idx: (1, M, k)
         Return:
-            
+            rec_xyz: (1, M*K, 3)
         """
         refined_skin_fea = self.fea_refine(skin_features, dilated_windows, dilated_idx)
         # refined_skin_fea: (M, C)
