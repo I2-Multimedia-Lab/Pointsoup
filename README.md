@@ -3,7 +3,7 @@
 ## News
 - [2024.4.23] The manuscript is now available on Arxiv [2404.13550](https://arxiv.org/abs/2404.13550).
 - [2024.4.21] The supplementary material is uploaded to [Google Drive](https://drive.google.com/file/d/113PvrVBll9frY1k6OC3QDA5PugnDcHdV/view?usp=sharing).
-- [2024.4.17] Our paper has been accepted by [IJCAI 2024](https://ijcai24.org/)!
+- [2024.4.17] Our paper has been accepted by [IJCAI 2024](https://doi.org/10.24963/ijcai.2024/595)!
 
 ## Overview
 > Despite considerable progress being achieved in point cloud geometry compression, there still remains a challenge in effectively compressing large-scale scenes with sparse surfaces. Another key challenge lies in reducing decoding latency, a crucial requirement in real-world application. In this paper, we propose Pointsoup, an efficient learning-based geometry codec that attains high-performance and extremely low-decoding-latency simultaneously. Inspired by conventional Trisoup codec, a point model-based strategy is devised to characterize local surfaces. Specifically, skin features are embedded from local windows via an attention-based encoder, and dilated windows are introduced as cross-scale priors to infer the distribution of quantized features in parallel. During decoding, features undergo fast refinement, followed by a folding-based point generator that reconstructs point coordinates with fairly fast speed. Experiments show that Pointsoup achieves state-of-the-art performance on multiple benchmarks with significantly lower decoding complexity, i.e., up to 90$\sim$160$\times$ faster than the G-PCCv23 Trisoup decoder on a comparatively low-end platform (e.g., one RTX 2080Ti). Furthermore, it offers variable-rate control with a single neural model (2.9MB), which is attractive for industrial practitioners.
@@ -108,10 +108,17 @@ Limitations:
 If you find this work useful, please consider citing our work:
 
 ```
-@article{kang2024pointsoup,
-      title={Pointsoup: High-Performance and Extremely Low-Decoding-Latency Learned Geometry Codec for Large-Scale Point Cloud Scenes}, 
-      author={Kang You, Kai Liu, Li Yu, Pan Gao, Dandan Ding},
-      journal={arXiv preprint arXiv:2404.13550},
-      year={2024}
+@inproceedings{ijcai2024p595,
+  title     = {Pointsoup: High-Performance and Extremely Low-Decoding-Latency Learned Geometry Codec for Large-Scale Point Cloud Scenes},
+  author    = {You, Kang and Liu, Kai and Yu, Li and Gao, Pan and Ding, Dandan},
+  booktitle = {Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence, {IJCAI-24}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Kate Larson},
+  pages     = {5380--5388},
+  year      = {2024},
+  month     = {8},
+  note      = {Main Track},
+  doi       = {10.24963/ijcai.2024/595},
+  url       = {https://doi.org/10.24963/ijcai.2024/595},
 }
 ```
